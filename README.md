@@ -6,6 +6,10 @@ This game project was made with using `Allegro 5` library in `C` programming lan
 
 If you would like to use the codes in your project, you have to specify  the resource. Copying is not allowed.
 
+![Menu](https://i.hizliresim.com/83MozQ.jpg)
+
+![Level](https://i.hizliresim.com/OB1ZZg.jpg)
+
 ## Contact Me
 
 **LinkedIn:** [bedirhanbudak](https://www.linkedin.com/in/bedirhan-budak/)
