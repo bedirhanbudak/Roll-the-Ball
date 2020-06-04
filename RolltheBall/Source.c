@@ -44,7 +44,7 @@ ALLEGRO_SAMPLE_INSTANCE* boxsound1 = NULL;
 ALLEGRO_SAMPLE_INSTANCE* playquit1 = NULL;
 ALLEGRO_SAMPLE* theme = NULL;
 ALLEGRO_FONT* font = NULL;
-bool ongamingsc = 0, nextlevel = 0;
+int ongamingsc = 0, nextlevel = 0;
 int levelsave = 1;
 
 int main() {
@@ -59,7 +59,7 @@ int main() {
 	al_init_font_addon();
 	al_init_ttf_addon();
 
-	bool checkquit = 1, credits = 0;
+	int checkquit = 1, credits = 0;
 	float x, y;
 
 	al_init();
@@ -105,6 +105,9 @@ int main() {
 		if (ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
 			if (ev.mouse.x > 277 && ev.mouse.y > 200 && ev.mouse.x < 361 && ev.mouse.y < 250) {
 				al_play_sample_instance(playquit1);
+				if (levelsave == 0) {
+					levelsave = 1;
+				}
 				ongamingsc = 1;
 			}
 			if (ev.mouse.x > 35 && ev.mouse.y > 398 && ev.mouse.x < 156 && ev.mouse.y < 448) {
@@ -668,7 +671,7 @@ void level_2() {
 				al_draw_bitmap(upright, board[13][0], board[13][1], 0);
 				al_draw_bitmap(begu, 80, 360, 0);
 				al_draw_bitmap(redd, 440, 0, 0);
-				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "1");
+				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "2");
 				al_draw_textf(font, al_map_rgb(243, 197, 147), 585, 83, 0, "%i", moves);
 				al_draw_filled_circle(xpos, ypos, 18, al_map_rgb(231, 231, 231));
 				ypos -= 0.15;
@@ -690,7 +693,7 @@ void level_2() {
 				al_draw_bitmap(upright, board[13][0], board[13][1], 0);
 				al_draw_bitmap(begu, 80, 360, 0);
 				al_draw_bitmap(redd, 440, 0, 0);
-				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "1");
+				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "2");
 				al_draw_textf(font, al_map_rgb(243, 197, 147), 585, 83, 0, "%i", moves);
 				al_draw_filled_circle(xpos, ypos, 18, al_map_rgb(231, 231, 231));
 				if (xpos <= 171) {
@@ -716,7 +719,7 @@ void level_2() {
 				al_draw_bitmap(upright, board[13][0], board[13][1], 0);
 				al_draw_bitmap(begu, 80, 360, 0);
 				al_draw_bitmap(redd, 440, 0, 0);
-				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "1");
+				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "2");
 				al_draw_textf(font, al_map_rgb(243, 197, 147), 585, 83, 0, "%i", moves);
 				al_draw_filled_circle(xpos, ypos, 18, al_map_rgb(231, 231, 231));
 				if (xpos <= 225) {
@@ -740,7 +743,7 @@ void level_2() {
 				al_draw_bitmap(upright, board[13][0], board[13][1], 0);
 				al_draw_bitmap(begu, 80, 360, 0);
 				al_draw_bitmap(redd, 440, 0, 0);
-				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "1");
+				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "2");
 				al_draw_textf(font, al_map_rgb(243, 197, 147), 585, 83, 0, "%i", moves);
 				al_draw_filled_circle(xpos, ypos, 18, al_map_rgb(231, 231, 231));
 				if (xpos <= 255) {
@@ -766,7 +769,7 @@ void level_2() {
 				al_draw_bitmap(upright, board[13][0], board[13][1], 0);
 				al_draw_bitmap(begu, 80, 360, 0);
 				al_draw_bitmap(redd, 440, 0, 0);
-				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "1");
+				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "2");
 				al_draw_textf(font, al_map_rgb(243, 197, 147), 585, 83, 0, "%i", moves);
 				al_draw_filled_circle(xpos, ypos, 18, al_map_rgb(231, 231, 231));
 				if (xpos <= 275) {
@@ -792,7 +795,7 @@ void level_2() {
 				al_draw_bitmap(upright, board[13][0], board[13][1], 0);
 				al_draw_bitmap(begu, 80, 360, 0);
 				al_draw_bitmap(redd, 440, 0, 0);
-				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "1");
+				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "2");
 				al_draw_textf(font, al_map_rgb(243, 197, 147), 585, 83, 0, "%i", moves);
 				al_draw_filled_circle(xpos, ypos, 18, al_map_rgb(231, 231, 231));
 				if (xpos <= 478) {
@@ -816,7 +819,7 @@ void level_2() {
 				al_draw_bitmap(upright, board[13][0], board[13][1], 0);
 				al_draw_bitmap(begu, 80, 360, 0);
 				al_draw_bitmap(redd, 440, 0, 0);
-				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "1");
+				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "2");
 				al_draw_textf(font, al_map_rgb(243, 197, 147), 585, 83, 0, "%i", moves);
 				al_draw_filled_circle(xpos, ypos, 18, al_map_rgb(231, 231, 231));
 				if (xpos <= 502) {
@@ -843,7 +846,7 @@ void level_2() {
 				al_draw_bitmap(upright, board[13][0], board[13][1], 0);
 				al_draw_bitmap(begu, 80, 360, 0);
 				al_draw_bitmap(redd, 440, 0, 0);
-				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "1");
+				al_draw_text(font, al_map_rgb(243, 197, 147), 28, 87, 0, "2");
 				al_draw_textf(font, al_map_rgb(243, 197, 147), 585, 83, 0, "%i", moves);
 				al_draw_filled_circle(xpos, ypos, 18, al_map_rgb(231, 231, 231));
 				ypos -= 0.15;
@@ -1507,7 +1510,7 @@ void level_4() {
 				al_flip_display();
 			}
 			onlevel = 0;
-			levelsave = 1;
+			levelsave = 0;
 			ongamingsc = 0;
 		}
 		if (ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
