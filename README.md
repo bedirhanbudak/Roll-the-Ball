@@ -20,4 +20,4 @@ If you would like to use the codes in your project, you have to specify  the res
 
 © **Bedirhan Budak**, **Deniz Parlar**, **Mehmet Ipek** *(Çukurova University / Computer Engineering)*
 
-Licensed under [the GNU GPL v3.0]_(LICENSE)_
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
