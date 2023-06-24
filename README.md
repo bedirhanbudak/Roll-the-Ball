@@ -12,7 +12,7 @@ If you would like to use the codes in your project, you have to specify  the res
 
 ## Contact Me
 
-**LinkedIn:** [bedirhanbudak](https://www.linkedin.com/in/bedirhan-budak/)
+**LinkedIn:** [bedirhanbudak](https://www.linkedin.com/in/bedirhanbudak)
 
 **Telegram:** [@bedirhanbudak](https://t.me/bedirhanbudak)
 
