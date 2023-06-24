@@ -14,7 +14,7 @@ If you would like to use the codes in your project, you have to specify  the res
 
 **LinkedIn:** [bedirhanbudak](https://www.linkedin.com/in/bedirhan-budak/)
 
-**Telegram:** [@bedirhanb](https://t.me/bedirhanb)
+**Telegram:** [@bedirhanb](https://t.me/bedirhanbudak)
 
 ## License & Copyright
 
